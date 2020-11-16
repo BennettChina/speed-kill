@@ -53,13 +53,13 @@
 
 ###  秒杀流程
 
-![秒杀系统流程](/Users/bennett/Desktop/秒杀系统流程.png)
+![秒杀系统流程](source/秒杀系统流程.png)
 
 
 
 ##  数据库表结构
 
-![speed-kill-db](/Users/bennett/Desktop/speed-kill-db.jpg)
+![speed-kill-db](source/speed-kill-db.jpg)
 
 
 
