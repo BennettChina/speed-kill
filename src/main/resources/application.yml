@@ -1,0 +1,34 @@
+server:
+  port: 8848
+
+spring:
+  application:
+    name: speed-kill
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8849
+  redis:
+    password: Yhrh#2020
+    timeout: 5s
+    jedis:
+      pool:
+        max-active: 200
+        max-idle: 50
+        max-wait: 5s
+        min-idle: 300000
+        time-between-eviction-runs: 30s
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/speed-kill?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: root
+  rabbitmq:
+    username: admin
+    password: 123456
+mybatis-plus:
+  type-aliases-package: com.bennett.speedkill.entity
+
+logging:
+  file:
+    name: ${spring.application.name}.log
